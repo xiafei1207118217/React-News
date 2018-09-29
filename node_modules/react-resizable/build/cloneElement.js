@@ -9,7 +9,7 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // React.addons.cloneWithProps look-alike that merges style & className.
-module.exports = function cloneElement(element /*: React.Element<any>*/, props /*: Object*/) /*: React.Element<any>*/ {
+module.exports = function cloneElement(element, props) {
   if (props.style && element.props.style) {
     props.style = _extends({}, element.props.style, props.style);
   }
